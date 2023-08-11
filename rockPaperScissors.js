@@ -58,16 +58,16 @@ function determineWinner(userChoice, computerChoice) {
     }
   }
 
-    if (userChoice === "bomb") {
-      return console.log("Boom, you won!");
-    }
+  if (userChoice === "bomb") {
+    return console.log("Boom, you won!");
+  }
 }
 
 function playGame() {
-  const userChoice = getUserChoice('rock');
+  const userChoice = getUserChoice("rock");
   const computerChoice = getComputerChoice();
-  console.log('You threw: ' + userChoice);
-  console.log('The computer threw: ' + computerChoice);
+  console.log("You threw: " + userChoice);
+  console.log("The computer threw: " + computerChoice);
   console.log(determineWinner(userChoice, computerChoice));
 }
 
