@@ -30,14 +30,32 @@ function getComputerChoice() {
 
 function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
-    return console.log('Tie!');
+    return console.log("Tie!");
   }
 
-  if (userChoice === 'rock') {
-    if (computerChoice === 'paper') {
-      return console.log('You lost!');
+  if (userChoice === "rock") {
+    if (computerChoice === "paper") {
+      return console.log("You lost!");
     } else {
-      return console.log('You won!');
+      return console.log("You won!");
     }
   }
-};
+
+  if (userChoice === "paper") {
+    if (computerChoice === "scissors") {
+      return console.log("You lost!");
+    } else {
+      return console.log("You won!");
+    }
+  }
+
+  if (userChoice === "scissors") {
+    if (computerChoice === "rock") {
+      return console.log("You lost!");
+    } else {
+      return console.log("You won!");
+    }
+  }
+}
+
+console.log(determineWinner("paper", "paper"));
