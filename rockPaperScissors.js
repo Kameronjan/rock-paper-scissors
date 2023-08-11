@@ -23,7 +23,7 @@ function getComputerChoice() {
       return "paper";
       break;
     case 2:
-      return " scissors";
+      return "scissors";
       break;
   }
 }
@@ -58,4 +58,4 @@ function determineWinner(userChoice, computerChoice) {
   }
 }
 
-console.log(determineWinner("paper", "paper"));
+console.log(determineWinner('paper', 'scissors'));
