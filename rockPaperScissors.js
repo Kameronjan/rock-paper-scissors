@@ -1,10 +1,14 @@
-const getUserChoice = userInput => {
+const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
 
-  if (userInput === 'rock' || userInput === 'paper' || userInput ==='scissors') {
+  if (
+    userInput === "rock" ||
+    userInput === "paper" ||
+    userInput === "scissors"
+  ) {
     return userInput;
   } else {
-    console.log('Error! Please input a valid entry.')
+    console.log("Error! Please input a valid entry.");
   }
 };
 
@@ -13,15 +17,15 @@ function getComputerChoice() {
 
   switch (number) {
     case 0:
-      return 'rock';
+      return "rock";
       break;
     case 1:
-      return 'paper';
+      return "paper";
       break;
     case 2:
-      return ' scissors';
+      return " scissors";
       break;
   }
-};
+}
 
-console.log(getComputerChoice());
+function determineWinner(userChoice, computerChoice) {}
