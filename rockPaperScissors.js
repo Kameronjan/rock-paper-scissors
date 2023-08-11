@@ -32,4 +32,12 @@ function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
     return console.log('Tie!');
   }
+
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return console.log('You lost!');
+    } else {
+      return console.log('You won!');
+    }
+  }
 };
