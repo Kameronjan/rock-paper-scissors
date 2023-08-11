@@ -31,35 +31,35 @@ function getComputerChoice() {
 
 function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
-    return console.log("Tie!");
+    return "Tie!";
   }
 
   if (userChoice === "rock") {
     if (computerChoice === "paper") {
-      return console.log("You lost!");
+      return "You lost!";
     } else {
-      return console.log("You won!");
+      return "You won!";
     }
   }
 
   if (userChoice === "paper") {
     if (computerChoice === "scissors") {
-      return console.log("You lost!");
+      return "You lost!";
     } else {
-      return console.log("You won!");
+      return "You won!";
     }
   }
 
   if (userChoice === "scissors") {
     if (computerChoice === "rock") {
-      return console.log("You lost!");
+      return "You lost!";
     } else {
-      return console.log("You won!");
+      return "You won!";
     }
   }
 
   if (userChoice === "bomb") {
-    return console.log("Boom, you won!");
+    return "Boom, you won!";
   }
 }
 
