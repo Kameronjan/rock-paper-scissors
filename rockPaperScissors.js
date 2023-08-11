@@ -28,4 +28,8 @@ function getComputerChoice() {
   }
 }
 
-function determineWinner(userChoice, computerChoice) {}
+function determineWinner(userChoice, computerChoice) {
+  if (userChoice === computerChoice) {
+    return console.log('Tie!');
+  }
+};
