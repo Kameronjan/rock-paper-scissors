@@ -4,7 +4,8 @@ const getUserChoice = (userInput) => {
   if (
     userInput === "rock" ||
     userInput === "paper" ||
-    userInput === "scissors"
+    userInput === "scissors" ||
+    userInput === "bomb"
   ) {
     return userInput;
   } else {
@@ -56,6 +57,10 @@ function determineWinner(userChoice, computerChoice) {
       return console.log("You won!");
     }
   }
+
+    if (userChoice === "bomb") {
+      return console.log("Boom, you won!");
+    }
 }
 
 function playGame() {
